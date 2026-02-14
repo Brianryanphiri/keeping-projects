@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <!-- Enhanced viewport for mobile -->
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover, user-scalable=yes" />
+
+  <!-- PWA Meta Tags -->
+  <meta name="theme-color" content="#1a1a2e">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Kayvan">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <!-- Apple Touch Icons -->
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="/apple-touch-icon-167x167.png">
+
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="/manifest.json">
+
+  <!-- SEO Meta Tags -->
+  <title>Kayvan | Premium Epoxy Solutions & Construction Materials</title>
+  <meta name="description"
+    content="Kayvan Company specializes in high-performance epoxy resin coatings, adhesives, and construction materials. Manufacturing, supply, and professional installation services." />
+  <meta name="author" content="Kayvan Company" />
+  <meta name="keywords"
+    content="epoxy, resin coatings, construction materials, floor coatings, adhesives, industrial flooring, epoxy solutions, resin systems, decorative epoxy" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://kayvan.com/" />
+  <meta property="og:title" content="Kayvan | Premium Epoxy Solutions & Construction Materials" />
+  <meta property="og:description"
+    content="High-performance epoxy resin coatings, adhesives, and construction materials. Manufacturing, supply, and professional installation services." />
+  <meta property="og:image" content="https://kayvan.com/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Kayvan Epoxy Solutions" />
+  <meta property="og:site_name" content="Kayvan" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@KayvanCompany" />
+  <meta name="twitter:creator" content="@KayvanCompany" />
+  <meta name="twitter:title" content="Kayvan | Premium Epoxy Solutions" />
+  <meta name="twitter:description"
+    content="High-performance epoxy resin coatings, adhesives, and construction materials." />
+  <meta name="twitter:image" content="https://kayvan.com/twitter-image.jpg" />
+  <meta name="twitter:image:alt" content="Kayvan Epoxy Solutions" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://kayvan.com/" />
+
+  <!-- Preconnect to important domains -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Preload critical assets -->
+  <link rel="preload" as="style" href="/src/index.css" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HomeAndConstructionBusiness",
+      "name": "Kayvan",
+      "description": "Premium epoxy solutions and construction materials manufacturer",
+      "url": "https://kayvan.com",
+      "logo": "https://kayvan.com/logo.png",
+      "telephone": "+1-234-567-8900",
+      "email": "info@kayvan.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Industrial Way",
+        "addressLocality": "City",
+        "addressRegion": "State",
+        "postalCode": "12345",
+        "addressCountry": "US"
+      },
+      "openingHours": "Mo-Fr 09:00-18:00",
+      "sameAs": [
+        "https://facebook.com/kayvan",
+        "https://twitter.com/kayvan",
+        "https://linkedin.com/company/kayvan"
+      ]
+    }
+    </script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+
+  <!-- PWA Service Worker Registration (optional) -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+          .then(registration => console.log('ServiceWorker registration successful'))
+          .catch(err => console.log('ServiceWorker registration failed: ', err));
+      });
+    }
+  </script>
+</body>
+
+</html>
